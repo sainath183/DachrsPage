@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import bgImg from "../assets/img/bg-home.jpg";
+import ChatBot from "./ChatBot"
 
 const Section = styled.section`
   position: relative;
@@ -115,8 +116,10 @@ const Home = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </SubTitle>
+        <ChatBot />
       </div>
     </Section>
+    
   );
 };
 

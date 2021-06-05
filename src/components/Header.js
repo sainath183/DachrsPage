@@ -4,6 +4,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import img from "../assets/img/dachrs1.png"
+
 
 const Header = () => {
   const scrollTo = id => e => {
@@ -24,9 +26,10 @@ const Header = () => {
             href="#home"
             onClick={scrollTo("home")}
             aria-label="Logo"
+            width="10px"
           >
-            LOGO
-          </Navbar.Brand>
+            <img src={img}/>
+            </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span />
             <span />
@@ -69,6 +72,30 @@ const Header = () => {
                 duration={400}
               >
                 Contact
+              </Link>
+              <Link
+                href="#"
+                className="nav-link"
+                activeClass="active"
+                to=""
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={400}
+              >
+                LogIn
+              </Link>
+              <Link
+                href="#"
+                className="nav-link"
+                activeClass="active"
+                to=""
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={400}
+              >
+                SignUp
               </Link>
             </Nav>
           </Navbar.Collapse>

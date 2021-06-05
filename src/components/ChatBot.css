@@ -1,0 +1,29 @@
+body {
+    font-size: 20px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(15, 238, 26);
+    color: white;
+    padding: 20px;
+  }
+  
+  
+  .bot {
+    bottom: 0;
+    right : 0;
+    position: fixed;
+    width: 350px;
+  }
+  
+  .btn {
+    font-size: 20px;
+    float: right;
+    width: 100%;
+    padding: 10px;
+    background-color: #41970e;
+    color: white;
+  }
